@@ -11,9 +11,47 @@ npx cap sync
 
 ## API
 
-<docgen-index></docgen-index>
+<docgen-index>
+
+* [`savePicture(...)`](#savepicture)
+* [Interfaces](#interfaces)
+
+</docgen-index>
 
 <docgen-api>
-<!-- run docgen to generate docs from the source -->
-<!-- More info: https://github.com/ionic-team/capacitor-docgen -->
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### savePicture(...)
+
+```typescript
+savePicture(options: SavePictureOptions) => any
+```
+
+| Param         | Type                                                              |
+| ------------- | ----------------------------------------------------------------- |
+| **`options`** | <code><a href="#savepictureoptions">SavePictureOptions</a></code> |
+
+**Returns:** <code>any</code>
+
+--------------------
+
+
+### Interfaces
+
+
+#### SavePictureOptions
+
+| Prop           | Type                |
+| -------------- | ------------------- |
+| **`album` (optional)**    | <code>string</code> |
+| **`filename`** | <code>string</code> |
+| **`path`**     | <code>string</code> |
+
+
+#### SavePictureResult
+
+| Prop      | Type                |
+| --------- | ------------------- |
+| **`uri`** | <code>string</code> |
+
 </docgen-api>
