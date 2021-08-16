@@ -9,10 +9,7 @@ import Capacitor
 public class MediastorePlugin: CAPPlugin {
     private let implementation = Mediastore()
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
-        call.resolve([
-            "value": implementation.echo(value)
-        ])
+    @objc func savePicture(_ call: CAPPluginCall) {
+        call.rejecct("iOS is not supported");
     }
 }

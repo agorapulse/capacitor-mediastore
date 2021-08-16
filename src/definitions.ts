@@ -1,7 +1,5 @@
 export interface MediastorePlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
-
-  savePicture(options: SavePictureOptions): Promise<SavePictureResponse>;
+  savePicture(options: SavePictureOptions): Promise<SavePictureResult>;
 }
 
 export interface SavePictureOptions {
@@ -10,6 +8,6 @@ export interface SavePictureOptions {
     path: string;
 }
 
-export interface SavePictureResponse {
+export interface SavePictureResult {
   uri: string;
 }

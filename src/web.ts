@@ -1,16 +1,14 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { MediastorePlugin, SavePictureOptions, SavePictureResponse } from './definitions';
+import type { MediastorePlugin, SavePictureOptions, SavePictureResult } from './definitions';
 
 export class MediastoreWeb extends WebPlugin implements MediastorePlugin {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
-  }
 
-  async savePicture(options: SavePictureOptions): Promise<SavePictureResponse> {
-    console.log('SAVE PICTURE', 'web is not supported yet');
-    void options;
-    return {uri: ""};
+  async savePicture(options: SavePictureOptions): Promise<SavePictureResult> {
+    return new Promise((resolve, reject) => {
+      void options;
+      void resolve;
+      reject('web is not supported');
+    });
   }
 }

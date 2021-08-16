@@ -14,10 +14,6 @@ import java.io.FileOutputStream;
 
 public class Mediastore {
 
-    public String echo(String value) {
-        return value;
-    }
-
     public String savePicture(Context context, String album, String filename, String path) throws Exception {
         // Add a specific media item.
         ContentResolver resolver = context.getContentResolver();

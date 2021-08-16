@@ -22,15 +22,6 @@ public class MediastorePlugin extends Plugin {
     private Mediastore implementation = new Mediastore();
 
     @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
-
-        JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
-        call.resolve(ret);
-    }
-
-    @PluginMethod
     public void savePicture(PluginCall call) {
         String album = call.getString("album");
         String filename = call.getString("filename");
