@@ -10,6 +10,14 @@ public class MediastorePlugin: CAPPlugin {
     private let implementation = Mediastore()
 
     @objc func savePicture(_ call: CAPPluginCall) {
-        call.rejecct("iOS is not supported");
+        call.reject("iOS is not supported");
+    }
+
+    @objc func saveToDownloads(_ call: CAPPluginCall) {
+        call.reject("iOS is not supported");
+    }
+
+    @objc func saveVideo(_ call: CAPPluginCall) {
+        call.reject("iOS is not supported");
     }
 }
