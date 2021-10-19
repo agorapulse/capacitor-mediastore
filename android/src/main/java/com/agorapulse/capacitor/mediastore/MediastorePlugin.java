@@ -72,7 +72,7 @@ public class MediastorePlugin extends Plugin {
 
         String uri;
         try {
-            uri = this.implementation.saveToDownloads(this.getActivity().getApplicationContext());
+            uri = this.implementation.saveToDownloads(this.getActivity().getApplicationContext(), fileName, path);
         } catch (Exception e) {
             call.reject(e.getMessage());
             return;

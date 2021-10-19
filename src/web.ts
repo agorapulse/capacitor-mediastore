@@ -1,7 +1,7 @@
 import { WebPlugin } from '@capacitor/core';
 
 import type { MediastorePlugin, SavePictureOptions, SavePictureResult,
-    SaveToDownloadsOptions, SaveVideoOptions, SaveVideoResult } from './definitions';
+    SaveToDownloadsOptions, SaveToDownloadsResult, SaveVideoOptions, SaveVideoResult } from './definitions';
 
 export class MediastoreWeb extends WebPlugin implements MediastorePlugin {
 
@@ -13,7 +13,7 @@ export class MediastoreWeb extends WebPlugin implements MediastorePlugin {
         });
     }
 
-    async saveToDownloads(options: SaveToDownloadsOptions): Promise<SaveToDownloadsOptions> {
+    async saveToDownloads(options: SaveToDownloadsOptions): Promise<SaveToDownloadsResult> {
         return new Promise((resolve, reject) => {
             void options;
             void resolve;

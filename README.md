@@ -14,6 +14,8 @@ npx cap sync
 <docgen-index>
 
 * [`savePicture(...)`](#savepicture)
+* [`saveToDownloads(...)`](#savetodownloads)
+* [`saveVideo(...)`](#savevideo)
 * [Interfaces](#interfaces)
 
 </docgen-index>
@@ -36,6 +38,36 @@ savePicture(options: SavePictureOptions) => any
 --------------------
 
 
+### saveToDownloads(...)
+
+```typescript
+saveToDownloads(options: SaveToDownloadsOptions) => any
+```
+
+| Param         | Type                                                                      |
+| ------------- | ------------------------------------------------------------------------- |
+| **`options`** | <code><a href="#savetodownloadsoptions">SaveToDownloadsOptions</a></code> |
+
+**Returns:** <code>any</code>
+
+--------------------
+
+
+### saveVideo(...)
+
+```typescript
+saveVideo(options: SaveVideoOptions) => any
+```
+
+| Param         | Type                                                          |
+| ------------- | ------------------------------------------------------------- |
+| **`options`** | <code><a href="#savevideooptions">SaveVideoOptions</a></code> |
+
+**Returns:** <code>any</code>
+
+--------------------
+
+
 ### Interfaces
 
 
@@ -43,12 +75,43 @@ savePicture(options: SavePictureOptions) => any
 
 | Prop           | Type                |
 | -------------- | ------------------- |
-| **`album` (optional)**    | <code>string</code> |
+| **`album`**    | <code>string</code> |
 | **`filename`** | <code>string</code> |
 | **`path`**     | <code>string</code> |
 
 
 #### SavePictureResult
+
+| Prop      | Type                |
+| --------- | ------------------- |
+| **`uri`** | <code>string</code> |
+
+
+#### SaveToDownloadsOptions
+
+| Prop           | Type                |
+| -------------- | ------------------- |
+| **`filename`** | <code>string</code> |
+| **`path`**     | <code>string</code> |
+
+
+#### SaveToDownloadsResult
+
+| Prop      | Type                |
+| --------- | ------------------- |
+| **`uri`** | <code>string</code> |
+
+
+#### SaveVideoOptions
+
+| Prop           | Type                |
+| -------------- | ------------------- |
+| **`album`**    | <code>string</code> |
+| **`filename`** | <code>string</code> |
+| **`path`**     | <code>string</code> |
+
+
+#### SaveVideoResult
 
 | Prop      | Type                |
 | --------- | ------------------- |

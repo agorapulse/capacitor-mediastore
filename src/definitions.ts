@@ -1,5 +1,7 @@
 export interface MediastorePlugin {
   savePicture(options: SavePictureOptions): Promise<SavePictureResult>;
+  saveToDownloads(options: SaveToDownloadsOptions): Promise<SaveToDownloadsResult>;
+  saveVideo(options: SaveVideoOptions): Promise<SaveVideoResult>;
 }
 
 export interface SavePictureOptions {

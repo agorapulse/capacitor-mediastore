@@ -49,22 +49,24 @@ public class Mediastore {
         return pictureContentUri.toString();
     }
 
-    public String saveToDownloads(Context context) throws Exception {
+    public String saveToDownloads(Context context, String filename, String path) throws Exception {
         Path filePath = Paths.get(path);
-        if (fileName == null) {
-            fileName = filePath.getFileName().toString();
+        if (filename == null) {
+            filename = filePath.getFileName().toString();
         }
         Long size = Files.size(filePath);
         String mimeType = Files.probeContentType(filePath);
 
         ContentResolver resolver = context.getContentResolver();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(MediaStore.Downloads.DISPLAY_NAME, fileName);
+        contentValues.put(MediaStore.Downloads.DISPLAY_NAME, filename);
         contentValues.put(MediaStore.Downloads.MIME_TYPE, mimeType);
         contentValues.put(MediaStore.Downloads.SIZE, size);
         Uri targetUri = resolver.insert(MediaStore.Downloads.EXTERNAL_CONTENT_URI, contentValues);
 
-        this.implementation.copyFile(resolver, path, targetUri);
+        copyFile(resolver, path, targetUri);
+
+        return targetUri.toString();
     }
 
     public String saveVideo(Context context, String album, String filename, String path) throws Exception {
@@ -92,9 +94,9 @@ public class Mediastore {
         this.copyFile(resolver, path, videoContentUri);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            newVideo.clear();
+            newVideoDetails.clear();
             newVideoDetails.put(MediaStore.Video.Media.IS_PENDING, 0);
-            resolver.update(pictureContentUri, newVideoDetails, null, null);
+            resolver.update(videoContentUri, newVideoDetails, null, null);
         }
         return videoContentUri.toString();
     }
