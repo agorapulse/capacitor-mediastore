@@ -1,0 +1,202 @@
+{
+  "api": {
+    "name": "MediastorePlugin",
+    "slug": "mediastoreplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "savePicture",
+        "signature": "(options: SavePictureOptions) => any",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "SavePictureOptions"
+          }
+        ],
+        "returns": "any",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "SavePictureOptions",
+          "SavePictureResult"
+        ],
+        "slug": "savepicture"
+      },
+      {
+        "name": "saveToDownloads",
+        "signature": "(options: SaveToDownloadsOptions) => any",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "SaveToDownloadsOptions"
+          }
+        ],
+        "returns": "any",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "SaveToDownloadsOptions",
+          "SaveToDownloadsResult"
+        ],
+        "slug": "savetodownloads"
+      },
+      {
+        "name": "saveVideo",
+        "signature": "(options: SaveVideoOptions) => any",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "SaveVideoOptions"
+          }
+        ],
+        "returns": "any",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "SaveVideoOptions",
+          "SaveVideoResult"
+        ],
+        "slug": "savevideo"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "SavePictureOptions",
+      "slug": "savepictureoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "album",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "filename",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "path",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "SavePictureResult",
+      "slug": "savepictureresult",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "uri",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "SaveToDownloadsOptions",
+      "slug": "savetodownloadsoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "filename",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "path",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "SaveToDownloadsResult",
+      "slug": "savetodownloadsresult",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "uri",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "SaveVideoOptions",
+      "slug": "savevideooptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "album",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "filename",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "path",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "SaveVideoResult",
+      "slug": "savevideoresult",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "uri",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "enums": []
+}
