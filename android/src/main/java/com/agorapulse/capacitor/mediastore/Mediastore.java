@@ -84,7 +84,7 @@ public class Mediastore {
         ContentValues newVideoDetails = new ContentValues();
         newVideoDetails.put(MediaStore.Video.Media.DISPLAY_NAME, filename);
         if (album != null && Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            newVideoDetails.put(MediaStore.Video.Media.RELATIVE_PATH, "Video/" + album);
+            newVideoDetails.put(MediaStore.Video.Media.RELATIVE_PATH, "Movies/" + album);
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             newVideoDetails.put(MediaStore.Video.Media.IS_PENDING, 1);
