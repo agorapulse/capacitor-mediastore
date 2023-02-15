@@ -1,11 +1,11 @@
-# @agorapulse/capacitor-mediastore
+# @cotecna/capacitor-mediastore
 
 Manage Android media files
 
 ## Install
 
 ```bash
-npm install @agorapulse/capacitor-mediastore
+npm install @cotecna/capacitor-mediastore
 npx cap sync
 ```
 

@@ -1,4 +1,4 @@
-package com.agorapulse.capacitor.mediastore;
+package com.cotecna.capacitor.mediastore;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
