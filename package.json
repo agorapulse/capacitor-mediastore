@@ -13,7 +13,10 @@
     "ios/Plugin/",
     "CotecnaCapacitorMediastore.podspec"
   ],
-  "author": "RoxTeddy <maxime@agorapulse.com>",
+  "author": "Cotecna",
+  "publishConfig": {
+    "access": "public"
+  }, 
   "license": "MIT",
   "repository": {
     "type": "git",
