@@ -1,5 +1,5 @@
 {
-  "name": "@agorapulse/capacitor-mediastore",
+  "name": "@cotecna/capacitor-mediastore",
   "version": "0.0.2",
   "description": "Manage Android media files",
   "main": "dist/plugin.cjs.js",
@@ -11,16 +11,19 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "AgorapulseCapacitorMediastore.podspec"
+    "CotecnaCapacitorMediastore.podspec"
   ],
-  "author": "RoxTeddy <maxime@agorapulse.com>",
+  "author": "Cotecna",
+  "publishConfig": {
+    "access": "public"
+  }, 
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/agorapulse/capacitor-mediastore.git"
+    "url": "git+https://github.com/cotecna-inspection/capacitor-mediastore.git"
   },
   "bugs": {
-    "url": "https://github.com/agorapulse/capacitor-mediastore/issues"
+    "url": "https://github.com/cotecna-inspection/capacitor-mediastore/issues"
   },
   "keywords": [
     "capacitor",
@@ -44,10 +47,11 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@capacitor/android": "^3.0.0",
-    "@capacitor/core": "^3.0.0",
+    "@capacitor/android": "^4.0.0",
+    "@capacitor/cli": "^4.6.3",
+    "@capacitor/core": "^4.0.0",
     "@capacitor/docgen": "^0.0.10",
-    "@capacitor/ios": "^3.0.0",
+    "@capacitor/ios": "^4.0.0",
     "@ionic/eslint-config": "^0.3.0",
     "@ionic/prettier-config": "^1.0.1",
     "@ionic/swiftlint-config": "^1.1.2",
