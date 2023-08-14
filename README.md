@@ -5,7 +5,12 @@ Manage Android media files
 ## Install
 
 ```bash
+# Capacitor 4
 npm install @agorapulse/capacitor-mediastore
+# Capacitor 3
+npm install @agorapulse/capacitor-mediastore@0.0.3
+
+# Then
 npx cap sync
 ```
 
