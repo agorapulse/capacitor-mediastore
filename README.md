@@ -5,7 +5,12 @@ Manage Android media files
 ## Install
 
 ```bash
+# Capacitor 4
 npm install @agorapulse/capacitor-mediastore
+# Capacitor 3
+npm install @agorapulse/capacitor-mediastore@0.0.3
+
+# Then
 npx cap sync
 ```
 
@@ -26,14 +31,14 @@ npx cap sync
 ### savePicture(...)
 
 ```typescript
-savePicture(options: SavePictureOptions) => any
+savePicture(options: SavePictureOptions) => Promise<SavePictureResult>
 ```
 
 | Param         | Type                                                              |
 | ------------- | ----------------------------------------------------------------- |
 | **`options`** | <code><a href="#savepictureoptions">SavePictureOptions</a></code> |
 
-**Returns:** <code>any</code>
+**Returns:** <code>Promise&lt;<a href="#savepictureresult">SavePictureResult</a>&gt;</code>
 
 --------------------
 
@@ -41,14 +46,14 @@ savePicture(options: SavePictureOptions) => any
 ### saveToDownloads(...)
 
 ```typescript
-saveToDownloads(options: SaveToDownloadsOptions) => any
+saveToDownloads(options: SaveToDownloadsOptions) => Promise<SaveToDownloadsResult>
 ```
 
 | Param         | Type                                                                      |
 | ------------- | ------------------------------------------------------------------------- |
 | **`options`** | <code><a href="#savetodownloadsoptions">SaveToDownloadsOptions</a></code> |
 
-**Returns:** <code>any</code>
+**Returns:** <code>Promise&lt;<a href="#savetodownloadsresult">SaveToDownloadsResult</a>&gt;</code>
 
 --------------------
 
@@ -56,19 +61,26 @@ saveToDownloads(options: SaveToDownloadsOptions) => any
 ### saveVideo(...)
 
 ```typescript
-saveVideo(options: SaveVideoOptions) => any
+saveVideo(options: SaveVideoOptions) => Promise<SaveVideoResult>
 ```
 
 | Param         | Type                                                          |
 | ------------- | ------------------------------------------------------------- |
 | **`options`** | <code><a href="#savevideooptions">SaveVideoOptions</a></code> |
 
-**Returns:** <code>any</code>
+**Returns:** <code>Promise&lt;<a href="#savevideoresult">SaveVideoResult</a>&gt;</code>
 
 --------------------
 
 
 ### Interfaces
+
+
+#### SavePictureResult
+
+| Prop      | Type                |
+| --------- | ------------------- |
+| **`uri`** | <code>string</code> |
 
 
 #### SavePictureOptions
@@ -80,7 +92,7 @@ saveVideo(options: SaveVideoOptions) => any
 | **`path`**     | <code>string</code> |
 
 
-#### SavePictureResult
+#### SaveToDownloadsResult
 
 | Prop      | Type                |
 | --------- | ------------------- |
@@ -95,7 +107,7 @@ saveVideo(options: SaveVideoOptions) => any
 | **`path`**     | <code>string</code> |
 
 
-#### SaveToDownloadsResult
+#### SaveVideoResult
 
 | Prop      | Type                |
 | --------- | ------------------- |
@@ -109,12 +121,5 @@ saveVideo(options: SaveVideoOptions) => any
 | **`album`**    | <code>string</code> |
 | **`filename`** | <code>string</code> |
 | **`path`**     | <code>string</code> |
-
-
-#### SaveVideoResult
-
-| Prop      | Type                |
-| --------- | ------------------- |
-| **`uri`** | <code>string</code> |
 
 </docgen-api>
