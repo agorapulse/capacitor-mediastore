@@ -5,8 +5,10 @@ Manage Android media files
 ## Install
 
 ```bash
+# Capacitor 5
+npm install @agorapulse/capacitor-mediastore@latest
 # Capacitor 4
-npm install @agorapulse/capacitor-mediastore
+npm install @agorapulse/capacitor-mediastore@0.1.0
 # Capacitor 3
 npm install @agorapulse/capacitor-mediastore@0.0.3
 
