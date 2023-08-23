@@ -1,6 +1,6 @@
 {
   "name": "@agorapulse/capacitor-mediastore",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Manage Android media files",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -46,10 +46,10 @@
     "release:minor": "npm run build && npm version minor && npm publish"
   },
   "devDependencies": {
-    "@capacitor/android": "^4.8.1",
-    "@capacitor/core": "^4.8.1",
+    "@capacitor/android": "^5.0.0",
+    "@capacitor/core": "^5.0.0",
     "@capacitor/docgen": "^0.2.1",
-    "@capacitor/ios": "^4.8.1",
+    "@capacitor/ios": "^5.0.0",
     "@ionic/eslint-config": "^0.3.0",
     "@ionic/prettier-config": "^1.0.1",
     "@ionic/swiftlint-config": "^1.1.2",
@@ -62,7 +62,7 @@
     "typescript": "~5.1.0"
   },
   "peerDependencies": {
-    "@capacitor/core": "^4.0.0"
+    "@capacitor/core": "^5.0.0"
   },
   "prettier": "@ionic/prettier-config",
   "swiftlint": "@ionic/swiftlint-config",
